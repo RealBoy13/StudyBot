@@ -1,0 +1,507 @@
+.קליטת משתנים ומחרוזת:
+משתנה מחלקה עוטפת סוג דרך קליטה
+x=in.nextInt(); שלם מספר Integer int
+x=in.nextDouble(); ממשי מספר Double double
+x=in.nextBoolean(); בוליאני משתנה Boolean boolean
+x=in.next().charAt(0); תו Character Char
+x=in.next(); מחרוזת String String ~
+:Math 
+PI.Math – מחזיר את הקבוע פאי.
+(x(abs.Math – מחזיר את הערך המוחלט של x.
+(y,x(max.Math – מחזיר את הערך הגדול מבין x ו-y.
+(y,x(min.Math – מחזיר את הערך הקטן מבין x ו-y.
+של הערך את מחזיר – Math.pow(x,a) a
+.x
+(x(sqrt.Math – מחזיר את הערך של ��√
+()random.Math – מחזיר מספר רנדומלי בטווח 1-0( מסוג double.)
+randNumber=(int)(Math.random()*(b-a+1)+a :הבאה בדרך a-b בטווח רנדומלי מספר לקבל ניתן~
+.תנאים:
+מבנה של תנאי בסיסי:
+
+if (condition)
+command;
+
+כאשר condition הוא ערך בוליאני כלשהו. לדוגמה:
+
+if (x==5)
+System.out.println("X is 5");
+
+ניתן להגדיר תנאי ליותר מפקודה אחת באמצעות סוגריים מסולסלים:
+
+if (condition) {
+command1;
+command2;
+}
+
+אם נרצה להוסיף הוראות לביצוע אם התנאי לא יתקיים, נעשה זאת באמצעות else:
+
+if (x == 5)
+System.out.println("X is 5");
+else
+System.out.println("X is not 5");
+תנאי מורכב הוא תנאי שמורכב מכמה תנאים בו זמנית. לדוגמה, אם אנו רוצים לכתוב תנאי שיתקיים אך ורק
+אם משתנה יהיה גדול מ-1 וגם קטן מ-9 ,נוכל לעשות זאת כך:
+
+if (x>1 && x<9)
+command;
+
+האופרטורים הלוגיים שקיימים הם:
+&& – אופרטור "וגם". גם התנאי הראשון וגם התנאי השני צריכים להתקיים כדי שהתנאי יהיה אמת.
+|| – אופרטור "או". מספיק שאחד מהתנאים יתקיים כדי שהתנאי יהיה אמת.
+! – אופרטור שלילה. הופך את התנאי )True הופך ל-False וההפך(.~
+.תנאים:
+מבנה של תנאי בסיסי:
+
+if (condition)
+command;
+
+כאשר condition הוא ערך בוליאני כלשהו. לדוגמה:
+
+if (x==5)
+System.out.println("X is 5");
+
+ניתן להגדיר תנאי ליותר מפקודה אחת באמצעות סוגריים מסולסלים:
+
+if (condition) {
+command1;
+command2;
+}
+
+אם נרצה להוסיף הוראות לביצוע אם התנאי לא יתקיים, נעשה זאת באמצעות else:
+
+if (x == 5)
+System.out.println("X is 5");
+else
+System.out.println("X is not 5");
+תנאי מורכב הוא תנאי שמורכב מכמה תנאים בו זמנית. לדוגמה, אם אנו רוצים לכתוב תנאי שיתקיים אך ורק
+אם משתנה יהיה גדול מ-1 וגם קטן מ-9 ,נוכל לעשות זאת כך:
+
+if (x>1 && x<9)
+command;
+
+האופרטורים הלוגיים שקיימים הם:
+&& – אופרטור "וגם". גם התנאי הראשון וגם התנאי השני צריכים להתקיים כדי שהתנאי יהיה אמת.
+|| – אופרטור "או". מספיק שאחד מהתנאים יתקיים כדי שהתנאי יהיה אמת.
+! – אופרטור שלילה. הופך את התנאי )True הופך ל-False וההפך(.~
+:Switch-Case .5
+Case-Switch נועד למקרים בהם צריכים לבדוק תנאי למשתנה שיש לו מספר רב של אפשרויות.
+נכתב כך -
+
+switch(x) {
+case 1:
+System.out.println("This number is One");
+break;
+case 2:
+System.out.println("This number is Two");
+break;
+case 3:
+System.out.println("This number is Three");
+break;
+default:
+System.out.println("This number is bigger than Three or smaller than One");
+}
+
+כאשר:
+x – המשתנה עליו אנו מסתכלים. יכול להיות מסוג String, char, int.
+case – כל מקרה אותו נרצה לבחון. אחרי case יבואו הפקודות אותן נרצה לבצע.
+בסוף כל מקרה תבוא השורה break .אחרת ה-case יבצע את כל הפעולות שמתחתיו.
+default – מה שיתבצע אם כל המקרים לא מתקיימים.~
+.מערכים:
+הצהרה על מערך: ;x[] int
+x = new int[size]; :מערך יצירת
+int[] x = new int[size]; :ביחד מערך ויצירת הצהרה
+אפשר ליצור מערך מכל סוג של טיפוס נתונים )Car, String, int, double)
+length.arrayName >= מחזיר את גודל המערך.
+x[0], x[1]......x[size-1] :במערך לתא גישה~
+מערך דו מימדי:
+הצהרה על מערך: ;x[] int
+x = new int[rows][ columns]; :מערך יצירת
+int[] x = new int[rows][ columns]; :ביחד מערך ויצירת הצהרה
+אפשר ליצור מערך דו מימדי מכל סוג של טיפוס נתונים )Car, String, int, double)
+length.arrayName >= מחזיר את מספר השורות במערך.
+length].i[arrayName >= מחזיר את מספר התאים בשורה i במערך.
+גישה לתא במערך:
+
+x[0][0], x[0][1], x[0][2], x[0][3]... x[0][ columns-1];
+x[1][0], x[1][1], x[1][2], x[1][3]... x[1][ columns-1];
+x[2][0], x[2][1], x[2][2], x[2][3]... x[2][ columns-1];
+x[rows-1][0], x[rows-1][1], x[rows-1][2], x[rows-1][3]... x[rows-1][ columns-1];~
+פעולות על מערכים:
+
+public static int min(int[] arr) {
+int min = a[0];
+for (int num : arr)
+min = Math.min(min, num);
+return min;
+}
+public static int max(int[] arr) {
+int max = a[0];
+for (int num : arr)
+min = Math.max(max, num);
+return max;
+}
+public static double avg(int[] arr) {
+double avg = 0;
+for (int num : arr)
+avg+=num;
+return avg/arr.length;
+}
+public static boolean exist(int[] arr, int x) {
+for (int num : arr)
+if (num==x) return true;
+return false;
+}
+public static int[][] subArr(int[][] arr, int i1, int j1, int i2, int j2) {
+int[][] sub = new int[i2-i1][j2-j1];
+for (int i=i1;i<=i2;i++) {
+for (int j=j1;j<=j2;j++)
+sub[i-i1][j-j1] = arr[i][j];
+}
+return sub;
+}~
+.פעולות:
+כותרת פעולה:
+public static (void/int/int[]/String/Car) Name (int[] x, String z, Car o) {
+/*
+code
+code
+(?) return Something
+*/
+}
+
+פעולת void לא מחזירה ערך, ולכן לא יהיה return בסופה. כל שאר הפעולות מחזירות ערך.
+פעולה יכולה לקבל כל ערך בתוך הסוגריים.
+- פעולת syso:
+
+public static void syso(String s) {
+System.out.println(s);
+}
+
+- פעולה שמחזירה סכום שני מספרים שלמים:
+
+public static int sum(int num1, int num2) {
+return (num1+num2);
+}
+
+- פעולה שמחזירה true אם num1 גדול מ-num2 ,ו-false אחרת:
+
+public static boolean biggerThan(int num1, int num2) {
+return num1>num2;
+}
+
+קריאה לפעולת void סטטית:
+
+syso("Hello, It's me (Adele)");
+
+קריאה לפעולה סטטית שמחזירה ערך:
+
+int result = sum(3,5);
+
+ פעולה סטטית היא פעולה שתבוא מחוץ למחלקה של העצם עליו היא מופעלת.~
+ .מחרוזות:
+הצהרה על מחרוזות:
+
+String a;
+String b = "";
+String c = "Ab1f";
+
+פעולות על String:
+- ()length.s >= מחזיר את אורך המחרוזת.
+- (s2(equals.s1 >= מחזיר true אם המחרוזות זהות ו-false אם לא.
+- (s2(compareTo.s1 >= מחזיר ערך שלילי אם s1 מגיעה במילון לפני s2 ,0 אם המחרוזות זהות או
+ערך חיובי אם s2 מגיעה במילון לפני s1.
+- (x(charAt.s >= מחזיר את התו במקום x.~
+
+.מחלקות / טיפוסי נתונים:
+
+public class Name {
+private TYPE theName;
+private TYPE otherName;
+public Name(TYPE theName, TYPE otherName) {
+this.theName = theName;
+this.otherName = otherName;
+}
+/*)קובעות( Setters( & מאחזרות( Getters/*
+public TYPE getTheName() {
+return this.theName;
+}
+public TYPE getOtherName () {
+return this.otherName;
+}
+public void setTheName(TYPE theName) {
+this.theName = theName;
+}
+public void setOtherName(TYPE otherName) {
+this.otherName = otherName;
+}
+public String toString() {
+return "The Name "+this.theName+" Other Name"+this.otherName;
+}
+}
+
+כאשר עושים הדפסה לאובייקט או טיפוס נתונים בשם שלו, מודפס ה-toString שלו.~
+כתיבת פעולות במחלקה:
+פעולת הבנאי יוצרת בפועל את האובייקט אותו כתבנו.
+
+public Name(TYPE theName, TYPE otherName) {
+this.theName = theName;
+this.otherName = otherName;
+}
+יכולה להיות פעולה בונה המקבלת ערכים, פעולה אשר לא מקבלת ערכים ופעולה המקבלת את אותו
+אובייקט על מנת ליצור אובייקט חדש וזהה. לכל מחלקה יכולות להיות מספר פעולות בונות.
+בדרך כלל לכל תכונה במחלקה יש פעולת get ו-set .הפעולה get מחזירה את התכונה )מאחזרת(
+והפעולה set קובעת מחדש את התכונה )קובעת(. הפעולות get ו-set הן פעולות לא סטטיות, ולכן לא יבוא
+static בכותרת הפעולה.
+
+
+
+פעולת get:
+
+public (int/int[]/double/String/Car) getName() {
+return this.name;
+}
+
+פעולת set:
+
+public void setName(TYPE name) {
+this.name = name;
+}
+
+קריאה לפעולה לא סטטית:
+
+objectName.getName();
+objectName.setName(name);~
+
+public class Node<T> {
+private T info; // נתונים
+private Node<T> next; // הבאה לחוליה הפנייה
+public Node (T info) { // בונה פעולה
+this.info = info;
+ההפניה לא מפנה לשום חולייה // ;null = next.this
+}
+public Node (T info, Node<T> next) {
+this.info = info;
+this.next = next;
+}
+public T getValue() {
+return info;
+}
+public Node<T> getNext() {
+return next;
+}
+public void setValue(T info) {
+this.info = info;
+}
+public void setNext (Node<T> next) {
+this.next = next;
+}
+public boolean hasNext() {
+return next!=null;
+}
+public String toString() {
+return ""+info;
+}
+}
+
+כאשר T הוא אובייקט )עצם(. במקרה שרוצים להשתמש במשתנים פרימיטיבים
+)int, double, char,...(
+משתמשים במחלקות העוטפות שלהם:
+
+int -> Integer
+double -> Double
+char -> Character
+String נשאר String
+
+הכרזה על חוליה חדשה:
+
+Node<Type> name = new Node<Type>(info, new Node<Type>(info));
+Node<Type> name1 = new Node<Type>(info, name);
+Node<Type> name2 = new Node<Type>(info);
+Node<Type> name3 = null;
+~
+מערך של רשימות:
+הכרזה:
+
+NodeInteger[] a = new NodeInteger[size];
+NodeString[] b = new NodeString[size];
+
+איתחול:
+
+for (int i=0;i<a.length;i++) {
+a[i] = new NodeInteger(0);
+}
+for (int i=0;i<b.length;i++) {
+b[i] = new NodeString("ABC");
+}~
+11.ממשק המחלקה מחסנית:
+
+public class Stack<T> {
+private Node<T> l;
+public Stack() {
+l = null;
+}
+public boolean isEmpty() {
+return l==null;
+}
+public void push(T x) {
+l = new Node<T>(x, l);
+}
+public T pop() {
+T x = l.getValue();
+l = l.getNext();
+return x;
+}
+public T top() {
+return l.getValue();
+}
+public String toString() {
+String str = "[";
+Node<T> tmp = l;
+while(tmp!=null) {
+str+=tmp.getValue();
+if (tmp.hasNext())
+str+=",";
+tmp = tmp.getNext();
+}
+return str+"]";
+}
+}~
+12.ממשק המחלקה תור:
+
+public class Queue<T> {
+private Node<T> first;
+private Node<T> last;
+public Queue() {
+this.first = null;
+this.last = null;
+}
+public boolean isEmpty() {
+return this.first==null;
+}
+public void insert(T x) {
+Node<T> tmp = new Node<T>(x);
+if (first == null) // The Queue is empty
+first = tmp;
+else
+last.setNext(tmp);
+last = tmp;
+}
+הפעולה מחזירה את האיבר שבראש התור ומסירה אותו // } ()remove T public
+T x = first.getValue();
+first = first.getNext();
+if (first == null)
+last = null;
+return x;
+}
+public T head() {
+return first.getValue();
+}
+public String toString() {
+String s = "[";
+Node<T> p = this.first;
+while (p != null) {
+s += p.getValue();
+if (p.hasNext())
+s += ",";
+p = p.getNext();
+}
+return s + "]";
+}
+}~
+.רקורסיה:
+רקורסיה – פעולה הקוראת לעצמה.
+לכל פעולה רקורסיבית חייב להיות תנאי עצירה, אחרת הפעולה לא תעבוד כראוי.
+דוגמאות לפעולות רקורסיביות:
+
+לולאה
+
+public static int sum(int[] a) {
+טענת כניסה: הפעולה מקבלת מערך של מספרים שלמים //
+טענת יציאה: הפעולה מחזירה את סכום איברי המערך //
+סיבוכיות זמן ריצה: (n(O//
+int i, s=0;
+while (i<a.length) {
+s+=a[i];
+i++;
+}
+return s;
+}
+
+רקורסיה
+public static int sum(int[] a) {
+טענת כניסה: הפעולה מקבלת מערך של מספרים שלמים //
+טענת יציאה: הפעולה מחזירה את סכום איברי המערך //
+סיבוכיות זמן ריצה: (n(O //
+return sum1(a, 0);
+}
+public static int sum1(int[]a, int i) {
+טענת כניסה: הפעולה מקבלת מערך של מספרים שלמים ואינדקס //
+טענת יציאה: מחזירה את סכום איברי המערך החל מהאינדקס //
+סיבוכיות זמן ריצה: (n(O//
+if (i<a.length)
+return a[i]+sum1(a,i+1);
+else return 0;
+}~
+ממשק.14
+
+public class BinNode<T> {
+private T x;
+private BinNode<T> left;
+private BinNode<T> right;
+public BinNode(BinNode<T> left, T x, BinNode<T> right) {
+this.left = left;
+this.x = x;
+this.right = right;
+}
+public BinNode(T x) {
+this.left = null;
+this.x = x;
+this.right = null;
+}
+public T getValue() {
+return x;
+}
+public BinNode<T> getLeft() {
+return left;
+}
+public BinNode<T> getRight() {
+return right;
+}
+public boolean hasLeft() {
+return left!=null;
+}
+public boolean hasRight() {
+return right!=null;
+}
+public void setLeft(BinNode<T> left) {
+this.left = left;
+}
+public void setRight(BinNode<T> right) {
+this.right = right;
+}
+public void setValue(T x) {
+this.x = x;
+}
+public String toString() {
+return " ( " + x + " ) ";
+}
+}
+מונחים והגדרות – עצים:
+צומת – איבר בעץ.
+שורש העץ – צומת שאין לו הורה.
+צאצא – צומת נקרא צאצא של צומת אחר, אם הוא ילד שלו או שהוא צאצא של הילד שלו. )היחס ההפוך
+נקרא הורה קדמון(.
+עלה – צומת שאין לה ילדים )ערירית( נקרא עלה.
+רמה – אורך המסלול מהשורש אל אותו הצומת, המרחק מהצומת אל השורש. הרמה של השורש היא 0.
+גובה העץ – מספר הרמה הגבוהה ביותר בעץ.
+עץ בינארי – עץ שיש לכל צומת בו שני ילדים לכל היותר. מקובל להתייחס אליהם כילד שמאלי וילד ימני.
+כל אחד משני אלה )אם הוא קיים( הוא שורש של עץ.
+סריקה בסדר תחילי – הביקור בשורש העץ מתבצע לפני שתי הסריקות הרקורסיביות.
+עץ ביטוי חשבוני:
+עץ בינארי המשמש לייצוג ביטוי חשבוני. נניח כי כל המספרים הם ספרות בטווח 9-0 וכי העץ יכול להכיל את
+האופרטורים של כל ארבע פעולות החשבון: חיבור, חיסור, כפל וחילוק. כמו כן, נניח שסביב כל אופרטור ושני
+הערכים עליו הוא פועל יש סוגריים.
+עץ חיפוש בינארי:
+עץ חיפוש בינארי הוא סוג של עץ בינארי. זהו עץ שבו כל הערכים המאוחסנים בתת העץ השמאלי של צומת
+כלשהו קטנים מהערך בצומת, וכל הערכים המאוחסנים בתת העץ השמאלי של צמומת גדולים או שווים
+מערך הצומת.
