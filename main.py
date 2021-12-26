@@ -21,7 +21,7 @@ client = discord.Client()
 
 a_file = open("אזרחות.txt", "r")
 content = a_file.read()
-ezrachoot_list = content.split("/")
+ezrachoot_list = content.split("~")
 a_file.close()
 
 a_file = open("מדמח.txt", "r")
