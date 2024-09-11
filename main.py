@@ -85,23 +85,6 @@ def convert(lst):
     return ([i for item in lst for i in item.split()])
 
 
-#sad_words = ["עצוב", "דיכאון", "דכאון", "קשה", "מבואס", "מבאס", "בוכה", "רע",  "חרא", "חרא", "בודד", "בדידות", "לבד", "עצבות"]
-
-#alert_words = ["מתעלל", "התעללות", "מתעללת", "להתאבד", "התאבדות", "מתאבד", "אני רוצה למות", "אין תקווה" ,"אין לי תקווה"]
-
-#strange_words = ["שונה", "מוזר", "אחר", "לא משתלב", "משתלב", "השתלבות", "שונות", "זר", "לא שייך", "חוסר שייכות"]
-
-#mental_words = ["חרדה", "חרד", "פחד", "בהלה", "חשש", "חושש", "חוששת", "חוששים", "חוששות"]
-
-#MentalHealth = [""
-#]
-
-#def get_Cat():
-#  response = requests.get("https://https://aws.random.cat/meow.io/api/random")
-# json_data = json.loads(response.text)
-# cat = json_data[0]['q'] + " -" + json_data[0]['a']
-#return(cat)
-
 
 def check(m):
     return m.content
